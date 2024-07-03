@@ -18,6 +18,7 @@ app.use(express.json());
 app.use("/user", require("./all-user")); //displaying all user
 app.use("/user/register-user", require("./register-user"));
 app.use("/user/delete-user", require("./delete-user"));
+app.use("/user/update-user", require("./update-user"));
 
 app.get("/", (req, res) => {
   res.send(`
