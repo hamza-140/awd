@@ -1,18 +1,23 @@
-import React from "react";
-import Register from "./Register";
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+import AllProducts from './AllProducts'
+import Navbar from './Navbar'
 
-const App = () => {
+function App() {
   return (
-    <div
-      style={{
-        backgroundColor: "#31363F",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      <Register></Register>
-    </div>
-  );
-};
+    <Router>
+      <div className="App">
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<AllProducts />} />
+        </Routes>
+      </div>
+    </Router>
+  )
+}
 
-export default App;
+export default App
