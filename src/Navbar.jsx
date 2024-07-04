@@ -12,8 +12,8 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="text-blue-500">
-              About
+            <Link to="/add" className="text-blue-500">
+              Add
             </Link>
           </li>
           <li>
