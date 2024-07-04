@@ -19,7 +19,11 @@ app.use("/user", require("./all-user")); //displaying all user
 app.use("/user/register-user", require("./register-user"));
 app.use("/user/delete-user", require("./delete-user"));
 app.use("/user/update-user", require("./update-user"));
-
+// routes for products
+app.use("/products", require("./Products/allProducts"));
+app.use("/product", require("./Products/addProduct"));
+app.use("/product", require("./Products/deleteProduct"));
+app.use("/product", require("./Products/updateProduct"));
 app.get("/", (req, res) => {
   res.send(`
     <div style="display: flex; justify-content: center; align-items: center;height:100vh">
