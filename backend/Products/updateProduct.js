@@ -12,13 +12,13 @@ router.put("/:_id", async (req, res) => {
       message: "No product exists with the given ID",
     });
   }
-  const { name, desc } = req.body;
+  const { name, desc, category, quantity, color, price, created_at } = req.body;
 
   try {
     // Update the product and get the updated document
     const updatedProduct = await product.findOneAndUpdate(
       { _id: productId },
-      { $set: { name, desc } },
+      { $set: { name, desc, category, quantity, color, price, created_at } },
       { new: true }
     );
 
