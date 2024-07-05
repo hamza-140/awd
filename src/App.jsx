@@ -5,6 +5,7 @@ import AddProduct from "./AddProduct";
 import Pokemon from "./Pokemon";
 import Navbar from "./Navbar";
 import DetailedProduct from "./DetailedProduct";
+import Awd from "./Awd";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<AddProduct />} />
+          <Route path="/awd" element={<Awd />} />
           <Route path="/pokemon" element={<Pokemon />} />
           <Route path="/product" element={<DetailedProduct />} />
         </Routes>

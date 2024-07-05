@@ -17,6 +17,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/awd" className="text-blue-500">
+              Awd
+            </Link>
+          </li>
+          <li>
             <Link to="/pokemon" className="text-blue-500">
               Pokemon
             </Link>
